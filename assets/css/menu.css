@@ -1,0 +1,46 @@
+.menu__lista {
+    display: flex;
+    margin: 0;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: .5rem;
+}
+
+.menu__icon {
+    width: 19px;
+    color: #464646;
+}
+
+.menu__link {
+    color: #464646;
+    font: 600 .875rem Raleway, sans-serif;
+    text-decoration: none;
+    position: relative; 
+}
+
+.menu__link--activo {
+    color: #333;
+    font-weight: bold;
+    margin-right: 1.25rem;
+    text-decoration: none;   
+}
+
+.menu__link:hover {
+    text-decoration: underline;   
+}
+
+@media screen and (min-width:768px) {
+    .menu__item {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .menu__link {
+        font-size: 1rem;
+    }
+}

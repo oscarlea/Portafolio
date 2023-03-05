@@ -1,0 +1,86 @@
+.header { 
+    align-items: center;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; 
+}
+
+.header__persona {
+    display: flex;
+    align-items: center;
+}
+
+.persona__logo {
+    color: #464646;
+    width: 22px;
+    height: 22px;
+}
+
+ .menuHeader__lista {
+    display: flex;  
+}
+
+.menuHeader__item {
+    list-style: none;
+}
+
+.menuHeader__link {
+    color: #464646;
+    font: 500 .875rem/18.78px Raleway, sans-serif;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+.menuHeader__link--activo {
+    color: #333;
+    font: 700 .875rem/18.78px Raleway, sans-serif;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+.menuHeader__link:hover {
+    color: #333;
+    text-decoration: underline;
+} 
+ 
+.persona__nombre {
+    margin-left: 6px;
+    color: #464646;
+    font: 700 1rem/18.78px Raleway, sans-serif;
+    margin: 0;
+}
+
+@media screen and (min-width: 0) {
+    .menuHeader__item:not(:last-child) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menuHeader__link {
+        font-size: 1rem;
+    }
+
+    .menuHeader__link--activo {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .header {
+        padding: 4rem 9.5rem 2rem;
+    }
+
+    .header__contacto {
+        font-size: 1rem;
+    }
+
+    .menuHeader__link {
+        margin-right: 1rem;
+    }
+
+    .menuHeader__item:not(:last-child) {
+        display: inline-block;
+    } 
+}

@@ -1,0 +1,131 @@
+.experiencia {
+    background-color: #F5F5F5;
+    padding: 2rem 2rem 0;
+}
+
+.experiencia__titulo {
+    color: #464646;
+    font: 700 1.375rem Raleway, sans-serif;
+    text-align: center;
+}
+
+.experiencia__contenidos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.experiencia__contenido {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experiencia__imagen {
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__imagen img {
+    width: 100%; 
+    height: auto;
+}
+
+.experiencia__descripcion {
+    color: #464646;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__subdescripcion {
+    color: #464646;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem; 
+}
+
+.experiencia__boton {
+    color: #fff;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    padding: 10px 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 0.875rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font: 600 0.875rem/16.44px Raleway, sans-serif;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.experiencia__boton:hover {
+    color: #2A7AE4;
+    background: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .experiencia__imagen {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .experiencia {
+        padding: 2rem 9.5rem 0;
+    }
+
+    .experiencia__titulo {
+        font-size: 2rem;
+    }
+
+    .experiencia__contenido {
+        justify-content: space-between;
+    }
+
+    .experiencia__contenido:nth-child(odd) {
+        flex-direction: row;
+    }
+    
+    .experiencia__contenido:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .experiencia__imagen {
+        display: flex;
+        
+         width: 66%; 
+    }
+
+    .experiencia__textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 34%;
+        padding: 1rem;
+    }
+
+    .experiencia__descripcion {
+        font-size: 1.375rem;
+    }
+
+    .experiencia__subdescripcion {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .experiencia__botones {
+        display: flex;
+    }
+
+    .experiencia__boton {
+        font-size: 1rem;
+    }
+
+}
